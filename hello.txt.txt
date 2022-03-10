@@ -1,0 +1,35 @@
+1) Code Review
+2) unit test
+3) code coverage
+4) package - 
+
+
+
+sudo su -
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-get update
+sudo apt-get install git -y
+git --version
+
+
+
+Java configuration in Jenkins console 
+	
+	Manage Jenkins --> Global Tool Configuration --> JDK --> Add JDK
+		Name: myjava ( can be any string )
+		JAVA_HOME: /path/to/javahome ( ex: /usr/lib/jvm/java )
+
+Maven Configuration in Jenkins console
+	
+	Manage Jenkins --> Global Tool Configuration --> Maven --> Add Maven
+		Name: maven3.6 ( can be any string )
+		MAVEN_HOME: /path/to/mavenhome ( /opt/apache-maven-3.6.0 )
+
+Jenkins Job      : maven goal           : post build action 
+
+/bin/mvn package
+
+
+
+Mandal/Panchayat/Division/Ward
