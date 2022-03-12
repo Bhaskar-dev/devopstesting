@@ -1,4 +1,4 @@
-aaaaaapackage com.devopsdemo.utilities;
+package com.devopsdemo.utilities;
 
 import java.io.InputStream;
 import java.util.Enumeration;
